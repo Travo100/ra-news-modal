@@ -1,0 +1,82 @@
+{
+	"stories": [
+		{
+			"isFeatured" : true,
+			"hasQuote" : true,
+			"video" : {
+				"hasVideo" : true,
+				"videoID" : "someID"
+			},
+			"social" : {
+				"hasSocial" : true,
+				"socialIcon" : "img/twitter-icon.png"
+			},
+			"thumbnail" : {
+				"hasThumbnail" : true,
+				"src" : "img/two-men-video.jpg"
+			},
+			"cta" : {
+				"hasCTA" : false,
+				"text" : "Read More >",
+				"link" : "#"
+			},
+			"title" : "Raymond McPherson",
+			"subtitle" : "Murrieta, CA",
+			"text" : "I’m so happy with my energy efficient home improvement, now I’m installing a solar system with my remaining HERO Financing.",
+			"tags" : ["energy", "solar", "HERO"], 
+			"sortOrderDate" : "03/15/2015"
+		},
+		{
+			"isFeatured" : true, 
+			"hasQuote" : true,
+			"video" : {
+				"hasVideo" : false,
+				"videoID" : ""
+			},
+			"social" : {
+				"hasSocial" : false,
+				"socialIcon" : ""
+			},
+			"thumbnail" : {
+				"hasThumbnail" : true,
+				"src" : "img/two-men-video.jpg"
+			},
+			"cta" : {
+				"hasCTA" : false,
+				"text" : "Read More >",
+				"link" : "#"
+			},
+			"title" : "James & Betty Fox",
+			"subtitle" : "Los Angeles, CA",
+			"text" : "I’m so happy with my energy efficient home improvement, now I’m installing a solar system with my remaining HERO Financing. I’m so happy with my energy efficient home improvement, now I’m installing a solar system with my remaining HERO Financing. I’m so happy with my energy efficient home improvement, now I’m installing a solar system with my remaining HERO Financing. I’m so happy with my energy efficient home improvement, now I’m installing a solar system with my remaining HERO Financing.",
+			"tags" : ["energy", "HERO"], 
+			"sortOrderDate" : "03/11/2015"
+		},
+		{
+			"isFeatured" : true,
+			"hasQuote" : false,
+			"video" : {
+				"hasVideo" : false,
+				 "videoID" : ""
+			},
+			"social" : {
+				"hasSocial" : false,
+				"socialIcon" : ""
+			},
+			"thumbnail" : {
+				"hasThumbnail" : false,
+				"src" : "img/charlotte-samples.jpg"
+			},
+			"cta" : {
+				"hasCTA" : true,
+				"text" : "Read More >",
+				"link" : "#"
+			},
+			"title" : "Los Angeles now offers the HERO Program to all eligible homeowners in the county",
+			"subtitle" : "",
+			"text" : "Hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words et.",
+			"tags" : ["energy", "HERO", "HVAC"], 
+			"sortOrderDate" : "02/11/2014"
+		}
+	]
+}

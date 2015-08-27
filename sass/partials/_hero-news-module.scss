@@ -1,0 +1,208 @@
+.hero-news-module{
+	font-family: $museo-regular;
+	background: $secondary-white;
+
+	.primary-button.blue-button.large {
+		margin: 8rem auto;
+	}
+	.hero-banner-news {
+		text-align: center;
+		font-family: $museo-light;
+		padding-top: 8rem;
+		padding-bottom: 4rem;
+		max-width: 78rem;
+		margin-left: auto;
+		margin-right: auto;
+		h2 {
+			font-size: 2.4rem;
+			line-height: 3.2rem;
+			color: #064871;
+		}
+		p {
+			font-size: 1.6rem;
+    		line-height: 2.8rem;
+    		color: #706e6e;
+		}
+		@media (min-width: 768px) {
+			h2 {
+				font-size: 3.6rem;
+				line-height: 5.5rem;
+			}
+			p {
+				line-height: 3rem;
+				font-size: 1.8rem;
+			}
+		}
+	}
+		.ra-flexbox {
+			display: block;
+			@media (min-width: 768px) {
+				display: -webkit-flex;		
+				display: -ms-flexbox;		
+				display: flex;
+				-webkit-flex-flow: row-wrap;
+				-ms-flex-flow: row-wrap;
+				flex-flow: row-wrap;
+				overflow: hidden;
+				-webkit-box-pack: justify;
+				-webkit-justify-content: space-between;
+				-ms-flex-pack: justify;
+				justify-content: space-between; 
+			}
+
+		.story-holder {
+			color: $secondary-gray;
+			padding-bottom: 4.5rem;
+			border: 1px solid #e3e3e3;
+			background: $primary-white;
+			max-width: 330px;
+			width: 94%;
+			margin: 0 auto;
+			flex: 0 0 28%; 
+			&:first-child {
+				display: block
+			}
+			&:nth-child(2), &:nth-child(3) {
+				display: none;
+			}
+			@media(min-width: 768px) {
+				flex: 0 0 48%;
+				&:nth-child(2) {
+					display: block;
+				}
+			}
+			@media(min-width: 992px) {
+				flex: 0 0 28%; 
+				&:nth-child(3) {
+					display: block;
+				}
+			}
+			h3, h4, p, a {
+				padding: 0 20px 0;
+			}
+			h3 {
+				font-family: $museo-bold;
+				line-height: 3rem;
+				font-size: 2.4rem;
+				margin-bottom: 0.5rem;
+			}
+			h4 {
+				font-family: $museo-light;
+				font-size: 2rem;
+				margin-top: 0;
+				margin-bottom: 3.5rem;
+			}
+			p {
+				font-size: 1.8rem;
+				line-height: 3.6rem;
+			}
+			a {
+				font-size: 1.4rem;
+				font-family: $museo-regular;
+				line-height: 1.8rem;
+				text-transform: uppercase;
+				color: $link-blue;
+				&:hover {
+					text-decoration: none;
+					color: darken($link-blue, 15);
+				}	
+			}
+			img, a {
+				display: block;
+			}
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			.ra-quote {
+				margin: 0 2rem 3.5rem;
+				max-width: 18px;
+			}
+			.ra-social-icon {
+				margin: -30px 15px 0 0;
+				padding: 0;
+				float: right;
+				max-width: 40px;
+			}
+			.video-thumb, .thumb {
+				position: relative;
+				margin-bottom: 3.5rem;
+				.video-thumb-play-button {
+					width: 6.5rem;
+					height: 6.5rem;
+					overflow: auto;
+					margin: auto;
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					border: 0;
+				}
+			}
+
+			.video-thumb:hover {
+				opacity: 0.8;
+				cursor: pointer;
+			}
+			
+			  &.ng-enter {
+			    transition: opacity linear 1s;
+			    opacity: 0;
+			  }
+			  
+			  &.ng-enter.ng-enter-active {
+			    opacity: 1;
+			  }
+			  &.ng-enter-stagger {
+			  /* this will have a 100ms delay between each successive enter animation */
+			  
+			  -webkit-transition-delay: 0.2s;
+			  transition-delay: 0.2s;
+			  /* in case the stagger doesn't work then these two values
+			     must be set to 0 to avoid an accidental CSS inheritance */
+			  
+			  -webkit-transition-duration: 0s;
+			  transition-duration: 0s;
+			}
+		}
+			
+
+		}
+	@media (min-width: 480px) {
+		.ra-hero-masonry .ra-item {
+			width: 300px;
+			margin: 0 15px 60px;
+		}
+	}
+	@media (min-width: 768px) {
+		.ra-banner {
+			h1 {
+				font-size: 4.5rem;
+				line-height: 5.8rem;
+			}
+			h3 {
+				font-size: 2rem;
+				line-height: 3rem;
+			}
+		}
+		
+	}
+	@media (min-width: 992px) {
+		.ra-hero-masonry .ra-item {
+			width: 300px;
+			margin: 0 40px 60px;
+		}
+		.ra-banner {
+			h1 {
+				font-size: 5rem;
+				line-height: 6.2rem;
+			}
+			h3 {
+				font-size: 2.4rem;
+				line-height: 3.6rem;
+			}
+		}
+	}
+}
