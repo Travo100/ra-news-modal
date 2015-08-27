@@ -31,9 +31,11 @@
                 <img ng-src="{{story.thumbnail.src}}" />
               </div>
               <img src="img/red-quote.png" ng-if="story.hasQuote" class="ra-quote" />
-              <h3 ng-bind="story.title"></h3>
-              <img ng-if="story.social.hasSocial" ng-src="{{story.social.socialIcon}}" class="ra-social-icon"/>
+              <div class="text-container">
+                <h3 ng-bind="story.title"></h3>
+                <img ng-if="story.social.hasSocial" ng-src="{{story.social.socialIcon}}" class="ra-social-icon"/>
               <h4 ng-bind="story.subtitle"></h4>
+              </div>
               
               <p ng-bind="story.text"></p>
               <a ng-if="story.cta.hasCTA" ng-href="{{story.cta.link}}" ng-bind="story.cta.text"></a>

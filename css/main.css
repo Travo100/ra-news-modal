@@ -179,7 +179,11 @@ button[type="submit"], .state-button {
         font-family: "Museo 500", sans-serif;
         line-height: 3rem;
         font-size: 2.4rem;
-        margin-bottom: 0.5rem; }
+        margin-bottom: 0.5rem;
+        max-width: 27rem; }
+        @media (min-width: 480px) {
+          .hero-news-module .ra-flexbox .story-holder h3 {
+            max-width: 30rem; } }
       .hero-news-module .ra-flexbox .story-holder h4 {
         font-family: "Museo 100", sans-serif;
         font-size: 2rem;
@@ -203,14 +207,16 @@ button[type="submit"], .state-button {
         width: 100%;
         height: auto;
         display: block; }
+      .hero-news-module .ra-flexbox .story-holder .text-container {
+        position: relative; }
       .hero-news-module .ra-flexbox .story-holder .ra-quote {
         margin: 0 2rem 3.5rem;
         max-width: 18px; }
       .hero-news-module .ra-flexbox .story-holder .ra-social-icon {
-        margin: -30px 15px 0 0;
-        padding: 0;
-        float: right;
-        max-width: 40px; }
+        position: absolute;
+        max-width: 40px;
+        right: 10px;
+        top: 0; }
       .hero-news-module .ra-flexbox .story-holder .video-thumb, .hero-news-module .ra-flexbox .story-holder .thumb {
         position: relative;
         margin-bottom: 3.5rem; }
