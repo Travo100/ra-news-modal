@@ -11,16 +11,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="favicon.ico" rel="icon" type="image/x-icon" />
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
-<body ng-app="heroProgramApp">
+<body ng-app="heroProgramApp" window-resize>
 <section class="hero-news-module" ng-controller="newsController as newsCtrl">
     <div class="container">
       <section class="hero-banner-news">
         <h2>Header describing HERO Stories module</h2>
         <p>In when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.</p>
       </section>
-      <div class="row">
           <div class="ra-flexbox">
             <div class="story-holder" ng-repeat="story in newsCtrl.stories">
               <div class="video-thumb" ng-click="masonryCtrl.playVideo(story.video.videoID)" ng-if="story.video.hasVideo">
@@ -40,7 +40,11 @@
               <p ng-bind="story.text"></p>
               <a ng-if="story.cta.hasCTA" ng-href="{{story.cta.link}}" ng-bind="story.cta.text"></a>
             </div>
-        </div>
+            <span ng-swipe-left="newsCtrl.carousel('back')" class="swipe left"></span>
+            <span ng-swipe-right="newsCtrl.carousel('forward')" class="swipe right"></span>
+            <i class="fa fa-chevron-left click left" ng-click="newsCtrl.carousel('back')"></i>
+            <i class="fa fa-chevron-right click right" ng-click="newsCtrl.carousel('forward')"></i>
+          </div>
       </div>
       <button class="primary-button blue-button large" ng-click="masonryCtrl.showMoreStories()">More Success Stories</button>
     </div>
@@ -51,6 +55,7 @@
 <script src="libs/masonry.pkgd.js"></script>
 <script src="libs/angular.min.js"></script>
 <script src="libs/angular-animate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-touch.min.js"></script>
 <!-- Include YT library and this directive -->
 <!-- <script src="https://www.youtube.com/iframe_api"></script>
 <script src="libs/angular-youtube-embed.js"></script> -->

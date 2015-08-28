@@ -104,7 +104,8 @@ button[type="submit"], .state-button {
 
 .hero-news-module {
   font-family: "Museo 300", sans-serif;
-  background: #f9f9f9; }
+  background: #f9f9f9;
+  height: 100%; }
   .hero-news-module .primary-button.blue-button.large {
     margin: 8rem auto; }
   .hero-news-module .hero-banner-news {
@@ -131,7 +132,8 @@ button[type="submit"], .state-button {
         line-height: 3rem;
         font-size: 1.8rem; } }
   .hero-news-module .ra-flexbox {
-    display: block; }
+    display: block;
+    position: relative; }
     @media (min-width: 768px) {
       .hero-news-module .ra-flexbox {
         display: -webkit-flex;
@@ -151,28 +153,20 @@ button[type="submit"], .state-button {
       background: #fff;
       max-width: 330px;
       width: 94%;
-      margin: 0 auto;
+      margin: 0 auto 20px;
       -webkit-flex: 0 0 28%;
       -ms-flex: 0 0 28%;
       flex: 0 0 28%; }
-      .hero-news-module .ra-flexbox .story-holder:first-child {
-        display: block; }
-      .hero-news-module .ra-flexbox .story-holder:nth-child(2), .hero-news-module .ra-flexbox .story-holder:nth-child(3) {
-        display: none; }
       @media (min-width: 768px) {
         .hero-news-module .ra-flexbox .story-holder {
           -webkit-flex: 0 0 48%;
           -ms-flex: 0 0 48%;
-          flex: 0 0 48%; }
-          .hero-news-module .ra-flexbox .story-holder:nth-child(2) {
-            display: block; } }
+          flex: 0 0 48%; } }
       @media (min-width: 992px) {
         .hero-news-module .ra-flexbox .story-holder {
           -webkit-flex: 0 0 28%;
           -ms-flex: 0 0 28%;
-          flex: 0 0 28%; }
-          .hero-news-module .ra-flexbox .story-holder:nth-child(3) {
-            display: block; } }
+          flex: 0 0 28%; } }
       .hero-news-module .ra-flexbox .story-holder h3, .hero-news-module .ra-flexbox .story-holder h4, .hero-news-module .ra-flexbox .story-holder p, .hero-news-module .ra-flexbox .story-holder a {
         padding: 0 20px 0; }
       .hero-news-module .ra-flexbox .story-holder h3 {
@@ -245,6 +239,23 @@ button[type="submit"], .state-button {
         /* in case the stagger doesn't work then these two values
            must be set to 0 to avoid an accidental CSS inheritance */
         transition-duration: 0s; }
+    .hero-news-module .ra-flexbox .swipe {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      display: block;
+      top: 0; }
+      .hero-news-module .ra-flexbox .swipe.right {
+        right: 0; }
+    .hero-news-module .ra-flexbox .click {
+      position: absolute;
+      top: 50%;
+      font-size: 20px; }
+      .hero-news-module .ra-flexbox .click.right {
+        right: 0; }
+    @media (min-width: 768px) {
+      .hero-news-module .ra-flexbox .swipe, .hero-news-module .ra-flexbox .click {
+        display: none; } }
   @media (min-width: 480px) {
     .hero-news-module .ra-hero-masonry .ra-item {
       width: 300px;
